@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>推しコレクション</title>
+    <!--　①webフォントを読み込む　-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!--　②自分で書くCSSファイルを読み込む-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 id="site-title">車コレクション</h1>
+<p class="site-description">車の魅力を紹介するサイトです</p>
+<p class="site-description">好きなものをどんどん追加していきます。</p>
+<img src="https://jota-garage.com/stock/st12/_src/9232/dsc06763.jpg?v=1767176858206" alt="車の画像">
+
+<a href="https://jota-garage.com/stock/st12/NA1NSXR.html" 
+target="_blank">
+もっと詳しく見る
+</a>
+<!--アイテムカード-->
+<hr>
+<section>
+    <h2>アイテム一覧</h2>
+    <div>
+        <h3>NSX-R NA1</h3>
+        <img src="https://fun2drive.co.jp/wp-content/uploads/2018/06/contents_main_NSX_02.jpg">
+        <p>ホンダの名車、NSX-Rです。全身アルミボディの軽量構造と、3.0L V6 VTECエンジンを搭載しています。</p>
+    </div>
+<section>
+
+<!--リアクションフォーム-->
+<section>
+    <h2>リアクション</h2>
+    <form class="reaction-form">
+        <label>気持ちを選んでね</label><br>
+        <input type="radio" name="reaction" value="like"> 好き！
+        <input type="radio" name="reaction" value="want"> 気になる
+        <input type="radio" name="reaction" value="wow"> すごい！
+        <br>
+        <button type="button" class="submit-btn">送信</button>
+        <p id="form-message"></p>
+    </form>
+</section>
+
+<button id="like-Btn" type="button" class="submit-btn">💛 いいね</button>
+<span id="like-count">0</span>
+
+<script src="script.js"></script>
+
+</body>
+</html>
